@@ -1,0 +1,1011 @@
+<?php /* Template Name: tinysites */ ?>
+ <!-- Custom CSS -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<style>
+	body {
+    font-family: Inter-Regular;
+}
+	h2 {
+    font-size: 30px;
+}
+	section.featured-project h2 {
+    text-align: center;
+}
+section.featured-project {
+    width: 85%;
+    margin: 0 auto;
+}	
+	.featured-project .column {
+    margin-top: 25px;
+}
+.main-section {
+    width: 100%;
+    max-width: 1920px;
+}
+	.top-hero-section {
+    background: #fafafa;
+		padding: 4em 0px;
+}
+	body {
+    margin: 0;
+}
+/* .row-container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1080px;
+} */
+.client-info-section {
+    width: 100%;
+}
+.client-info-top {
+    display: flex;
+    width: 90%;
+    max-width: 820px;
+    margin: 0 auto;
+}
+	.client-info-top .client-detail-box h4 {
+    margin: 0;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.client-detail-box p {
+    margin-bottom: 0px;
+    margin-top: 35px;
+}
+
+.client-detail-box a {
+    text-decoration: none;
+    color: #000;
+    font-size: 26px;
+    font-family: Arapey-Italic;
+}
+	.client-info-top .img-box {
+    width: 37%;
+}
+	.client-info-top .img-box img{
+		width:100%;
+		border-radius: 55%;
+	}
+	.client-detail-box {
+    width: 55%;
+    margin: auto 0px;
+    margin-left: 45px;
+}
+.button-all p a.button:hover {
+    border: 1px solid #000;
+    color: #000;
+    background: #ffffff;
+}
+
+.button-all p a.button {
+    background: #000000;
+    padding: 13px 0px;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 55px;
+    width: 60%;
+    border: 1px solid #000;
+    transition: 0.4s ease all;
+	font-weight: 500;
+    font-size: 16px;
+}
+	.button-all {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding-bottom:20px;
+}
+	section.featured-project .container-inner {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+	section.featured-project h2 {
+    text-align: center;
+}
+	section.featured-project .container-inner .column {
+    padding: 0px 10px;
+}
+section.featured-project .container-inner .column:hover a img {
+    transform: scale(1.1);
+}
+
+section.featured-project .container-inner .column img {
+    width: 100%;
+    transform: scale(1);
+    transition: 0.4s ease all;
+}
+	section.featured-project .container-inner .column p {
+    text-align: center;
+    font-weight: 700;
+}
+	section.featured-project .container-inner .column p a {
+    text-decoration: none;
+    color: #000000;
+}
+	section.listings {
+display: block;
+    width: 90%;
+    max-width: 1080px;
+    padding-top: 10px;
+    
+    text-align: center;
+    margin: 0 auto;
+}
+	section.featured-project h2 {
+    text-align: center;
+}
+	.client-info-top .client-detail-box h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+		font-size: 28px;
+}
+	.client-detail-box p.c-num {
+    margin-top: 8px;
+}
+	.client-detail-box p.c-num a {
+   font-size: 26px;
+    font-family: Inter-Regular;
+}
+	.client-detail-box p.c-num {
+    margin-top: 5px;
+}
+	.client-documentation {
+max-width: 820px;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 80px;
+}
+	.client-documentation p {
+font-size: 26px;
+    text-align: center;
+    line-height: 30px;
+    font-family: Arapey-Italic;
+}
+	.counter-con {
+width: 90%;
+    max-width: 680px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    padding: 65px 0px;
+}
+	.counter-con .counters h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+	.counter-con .counters p {
+    font-weight: 600;
+    margin-top: 5px;
+}
+	section.category-section .container-inner {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+/* 	section.category-section .container-inner .column img {
+    width: 110px;
+    border-radius: 55%;
+    height: 110px;
+    border: 1px solid #ddd;
+    padding: 5px;
+   object-fit: cover;
+		transform: scale(1);
+    transition: 0.4s ease all;
+} */
+	
+	.f-img {
+    overflow: hidden;
+    position: relative;
+}
+	section.category-section .container-inner .column {
+    text-align: center;
+}
+	section.category-section .container-inner .column p,section.category-section .container-inner .column a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+	.embed-container {
+width: 90%;
+    margin: 0 auto;
+    max-width: 820px;
+    position: relative;
+}
+	section.category-section {
+    margin: 90px 0px;
+}
+	.s-media ul {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+	.s-media ul li:first-child {
+    padding-left: 0;
+}
+
+.s-media ul li {
+    float: left;
+    padding-left: 20px;
+}
+.s-media ul li img:hover {
+    opacity: 0.7;
+    transition: 0.4s ease all;
+}
+.s-media ul li img {
+    width: 30px;
+    transition: 0.4s ease all;
+}
+	.embed-container video#vid {
+    position: relative;
+    z-index: 999;
+}
+	div#image {
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+}
+	div#image img {
+    width: 100%;
+}
+	
+
+.category-img {
+    overflow: hidden;
+    width: 110px;
+    border-radius: 55%;
+    height: 110px;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 0.4s ease all;
+	margin:0 auto;
+}
+	.category-img img {
+	transform: scale(1);
+    transition: 0.4s ease all;
+		width:110px;
+		height:110px;
+	}
+	
+.category-img img:hover {
+ 
+    transform: scale(1.1);
+    transition: 0.4s ease all;
+	
+}
+	.cat-img {
+    position: relative;
+}
+	.cat-img:before {
+    border: 1px #ddd solid;
+    width: 110px;
+    height: 110px;
+    border-radius: 70px;
+    margin: 0 auto;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -6px;
+    padding: 5px;
+}
+
+	/*------------------------footer----------------------------*/
+	section.footer {
+    width: 90%;
+    max-width: 720px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+	.f-logo {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+	.f-logo .logo img {
+    width: 100%;
+}
+	.f-logo .logo {
+    padding: 0px 30px;
+    margin: 0 auto;
+}
+	.client-info {
+    text-align: center;
+    margin: 60px 0px;
+    display: inline-block;
+    width: 100%;
+}
+	.client-info p {
+    font-size: 24px;
+    font-family: Arapey-Italic;
+}
+.footer-credits {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 40px 0px;
+	}
+	section.footer .client-info a {
+    color: #000000;
+    text-decoration: none;
+}
+	.footer-credits img {
+    max-width: 270px;
+}
+.client-info-section {
+    background: #fafafa;
+}
+	@media screen and (max-width: 600px) {
+		.counter {
+    background: #fafafa;
+}
+		section.category-section {
+    margin: 40px 0px;
+}
+		section.category-section .container-inner .column p, section.category-section .container-inner .column a {
+   
+    font-size: 12px;
+}
+		.counter-con .counters h3 {
+    font-size: 18px;
+    
+}
+		section.category-section .container-inner .column img {
+    width: 80px;
+    height: 80px;
+   
+}
+		section.category-section .container-inner .column {
+ 
+    width: 33%;
+    float: left;
+}
+		section.category-section .container-inner {
+    display: block;
+  
+    
+}
+		.embed-container {
+   
+    margin-top: 45px;
+}
+		.top-hero-section {
+    
+    padding-bottom: 2em ;
+}
+		.counter-con {
+   
+    padding: 0px 0px;
+}
+		.counter-con .counters p {
+   
+    font-size: 13px;
+}
+		.client-info-top {
+    display: block;
+   
+}
+		.client-info-top .img-box {
+    width: 100%;
+			    text-align: center;
+}
+		.client-detail-box {
+    width: 100%;
+    margin: auto 0px;
+    margin-left: 0px;
+	padding-top: 30px;
+    text-align: center;
+}
+		.client-documentation {
+  
+    margin-top: 30px;
+}
+		.client-info-top .img-box img {
+    width: 70%;
+    
+}
+		section.featured-project h2 {
+
+    padding-top: 15em;
+			font-size:20px;
+}
+		section.listings {
+   
+    padding-bottom: 0px;
+    
+}
+		.container-inner {
+    width: 90%;
+    margin: 0 auto;
+}
+		.client-info-section {
+   
+    background: #fafafa;
+}
+		.button-all p a.button {
+   
+    width: 90%;
+   
+}
+		section.footer {
+    
+    margin-top: 50px;
+}
+		.client-info {
+
+    margin: 0px 0px;
+   
+}
+		section.featured-project .container-inner .column p {
+    
+    font-size: 12px;
+}
+		.listings h2 {
+    font-size: 20px;
+}
+
+	}
+	.s-media ul .whatapp-icon img {
+    width: 35px;
+}
+	.s-media ul li.facebook-icon img {
+    width: 33px;
+}
+	.s-media ul li.you-icon img {
+    width: 33px;
+}
+/*#image img {
+position: absolute;
+    display: block;
+    width: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0;
+    padding: 200px 0px;
+    cursor: pointer;
+}
+	#image {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    display: inline-block;
+    background: rgb(0 0 0 / 44%);
+}*/
+	
+/*------------------------fonts-------------------------------*/
+	@font-face {
+    font-family: Arapey-Italic;  
+    src: url(https://wordpress-577018-2499647.cloudwaysapps.com/wp-content/themes/twentytwentyone/fonts/Arapey-Italic.ttf);  
+    font-weight: normal;  
+}
+	@font-face {
+    font-family: Inter-Regular;  
+    src: url(https://wordpress-577018-2499647.cloudwaysapps.com/wp-content/themes/twentytwentyone/fonts/static/Inter-Regular.ttf);  
+    font-weight: normal;  
+}
+</style>
+<div class="main-section">
+<div class="row-container">
+
+<div class="client-info-section">
+	
+	<div class="top-hero-section">
+		 
+
+	
+	<div class="client-info-top">
+<div class="img-box">
+<?php 
+$image = get_field('image');
+if( !empty( $image ) ): ?>
+    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+<?php endif; ?>
+</div>
+<div class="client-detail-box">
+<h2><?php the_field('client_name'); ?></h2>
+<h4><?php the_field('position'); ?></h4>
+<p><a href="mailto:<?php the_field('client_email'); ?>"><?php the_field('client_email'); ?></a></p>
+
+<p class="c-num"><a href="tel:<?php the_field('client_phone_number'); ?>"><?php the_field('client_phone_number'); ?></a></p>
+<div class="s-media">
+	<?php 
+	$insta = get_field('instagram_image');
+	$instalink = get_field('instagram_link');
+	
+    $linkedin = get_field('linkedin_image');
+	$linkedinlink = get_field('linkedin_link');
+	
+	$twitter = get_field('twitter_image');
+	$twitterlink = get_field('twitter_link');
+	
+	$facebook = get_field('facebook_image');
+	$facebooklink = get_field('facebook_link');
+	
+	$youtube = get_field('youtube_image');
+	$youtubelink = get_field('youtube_link');
+	
+    $whatsapp = get_field('whats_app_image');
+	$whatsapplink = get_field('whats_app_link');
+	
+    $tiktok = get_field('tiktok_image');
+	$tiktoklink = get_field('tiktok_link');
+	
+    $pinterest = get_field('pinterest_image');
+	$pinterestlink = get_field('pinterest_link');
+	
+	?>
+	<ul>
+		<?php if ($insta){ ?>
+		<li><a href="<?php echo esc_url( $instalink ); ?>" target="_blank"><img src="<?php echo "$insta"; ?>"/></a></li>
+		<?php
+ }else{
+			echo '';
+			}?>
+		
+		<?php if ($linkedin){ ?>
+		<li><a href="<?php echo esc_url( $linkedinlink ); ?>" target="_blank"><img src="<?php echo "$linkedin"; ?>"/></a></li>
+		<?php
+ }else{
+			echo '';
+			}?>
+		<?php if ($facebook){ ?>
+		<li class="facebook-icon"><a href="<?php echo esc_url( $facebooklink ); ?>" target="_blank"><img src="<?php echo "$facebook"; ?>"/></a></li>
+		<?php
+ }else{
+			echo '';
+			}?>
+		<?php if ($twitter){ ?>
+		<li class="facebook-icon"><a href="<?php echo esc_url( $twitterlink ); ?>" target="_blank"><img src="<?php echo "$twitter"; ?>"/></a></li>
+		<?php
+ }else{
+			echo '';
+			}?>
+		<?php if ($youtube){ ?>
+		<li class="you-icon"><a href="<?php echo esc_url( $youtubelink ); ?>" target="_blank"><img src="<?php echo "$youtube"; ?>"/></a></li>
+		<?php
+ }else{
+			echo '';
+			}?>
+		<?php if ($whatsapp){ ?>
+		<li class="whatapp-icon"><a href="<?php echo esc_url( $whatsapplink ); ?>" target="_blank"><img src="<?php echo "$whatsapp"; ?>"/></a></li>
+		<?php
+ }else{
+			echo '';
+			}?>
+		<?php if ($tiktok){ ?>
+		<li><a href="<?php echo esc_url( $tiktoklink ); ?>" target="_blank"><img src="<?php echo "$tiktok"; ?>"/></a></li>
+		<?php
+ }else{
+			echo '';
+			}?>
+		<?php if ($pinterest){ ?>
+		<li><a href="<?php echo esc_url( $pinterestlink ); ?>" target="_blank"><img src="<?php echo "$pinterest"; ?>"/></a></li>
+		<?php
+ }else{
+			echo '';
+			}?>
+
+	</ul>
+	</div>
+</div></div>
+
+<div class="client-documentation">
+<p><?php the_field('client_documentation'); ?></p>
+</div>
+
+	</div>		
+		
+<div class="counter">
+	<div class="counter-con">
+<div class="counters"><p><?php the_field('ranked'); ?></p></div>
+<div class="counters"><p><?php the_field('career'); ?></p></div>
+<div class="counters"><p><?php the_field('individuals_de'); ?></p></div>
+		<div class="counters"><p><?php the_field('sales_in_year_1'); ?></p></div>
+<div class="counters"><p><?php the_field('sales_in_year_2'); ?></p></div>
+<div class="counters"><p><?php the_field('sales_in_year_3'); ?></p></div>
+		</div>
+</div>
+
+<div class="embed-container">
+	
+ <?php
+
+// Load value.
+$iframe = get_field('oembed');
+
+?>
+
+   <video id="vid" src="<?php echo "$iframe"; ?>" width="100%" heigh="560" preload="auto" controls></video>
+	<div id="image">
+	<img  src="/wp-content/uploads/2022/03/video-cover.jpg" />	</div>
+</div>
+	<section class="category-section">
+		<?php 
+		$about_image = get_field('about_image');
+		$about_text = get_field('about_text');
+		$about_link = get_field('about_link');
+		
+		$listings_image = get_field('listings_image');
+		$listings_text = get_field('listings_text');
+		$listings_link = get_field('listings_link');
+		
+		$sales_image = get_field('sales_image');
+		$sales_text = get_field('sales_text');
+		$sales_link = get_field('sales_link');
+		
+		$homes_image = get_field('homes_image');
+		$homes_text = get_field('homes_text');
+		$homes_link = get_field('homes_link');
+		
+		$condos_image = get_field('condos_image');
+		$condos_text = get_field('condos_text');
+		$condos_link = get_field('condos_link');
+		
+		$developments_image = get_field('developments_image');
+		$developments_text = get_field('developments_text');
+		$developments_link = get_field('developments_link');
+		?>
+		<div class="container-inner">
+
+			<div class="column">
+				
+				<a href="<?php echo esc_url( $about_link ); ?>">
+					<div class="cat-img">
+				<?php if ($about_image){?>
+						<div class="category-img"> <img src="<?php echo "$about_image"; ?>" /> </div>
+			<?php }else{
+			echo '';
+			}?>
+						</div>
+<p>
+						<?php if ($about_text){
+			 echo "$about_text";
+ }else{
+			echo '';
+			}?>
+					</p>
+				</a>
+			</div>
+			<div class="column">
+				<a href="<?php echo esc_url( $listings_link ); ?>">
+					<div class="cat-img">
+				<?php if ($listings_image){?>
+					<div class="category-img"><img src="<?php echo "$listings_image"; ?>" /></div>
+			<?php }else{
+			echo '';
+			}?>
+					</div>
+<p>
+						<?php if ($listings_text){
+			 echo "$listings_text";
+ }else{
+			echo '';
+			}?>
+					</p>
+				</a>
+			</div>
+			<div class="column">
+				<a href="<?php echo esc_url( $sales_link ); ?>">
+					<div class="cat-img">
+				<?php if ($sales_image){?>
+					<div class="category-img"><img src="<?php echo "$sales_image"; ?>" /></div>
+			<?php }else{
+			echo '';
+			}?>
+					</div>
+<p>
+						<?php if ($sales_text){
+			 echo "$sales_text";
+ }else{
+			echo '';
+			}?>
+					</p>
+				</a>
+			</div>
+			<div class="column">
+				<a href="<?php echo esc_url( $homes_link ); ?>">
+					<div class="cat-img">
+				<?php if ($homes_image){?>
+					<div class="category-img"><img src="<?php echo "$homes_image"; ?>" /></div>
+			<?php }else{
+			echo '';
+			}?>
+					</div>
+<p>
+						<?php if ($homes_text){
+			 echo "$homes_text";
+ }else{
+			echo '';
+			}?>
+					</p>
+				</a>
+			</div>
+			<div class="column">
+				<a href="<?php echo esc_url( $condos_link ); ?>">
+					<div class="cat-img">
+				<?php if ($condos_image){?>
+					<div class="category-img"><img src="<?php echo "$condos_image"; ?>" /></div>
+			<?php }else{
+			echo '';
+			}?>
+					</div>
+<p>
+						<?php if ($condos_text){
+			 echo "$condos_text";
+ }else{
+			echo '';
+			}?>
+					</p>
+				</a>
+			</div>
+			<div class="column">
+				<a href="<?php echo esc_url( $developments_link ); ?>">
+					<div class="cat-img">
+				<?php if ($developments_image){?>
+					<div class="category-img"><img src="<?php echo "$developments_image"; ?>" /></div>
+			<?php }else{
+			echo '';
+			}?>
+					</div>
+<p>
+						<?php if ($developments_text){
+			 echo "$developments_text";
+ }else{
+			echo '';
+			}?>
+					</p>
+				</a>
+			</div>
+		</div>
+	</section>
+	<div class="clear">
+		
+	</div>
+	<section class="featured-project">
+		
+		<?php
+		$pimage1 = get_field('featured_image_1');
+		$pimage2 = get_field('project_image_2');
+		$pimage3 = get_field('project_image_3');
+		$pimage4 = get_field('project_image_4');
+		$pimage5 = get_field('project_image_5');
+		$pimage6 = get_field('project_image_6');
+		
+		?>
+		<div class="container">
+			<h2>Featured Developments</h2>
+			<div class="container-inner">
+			<div class="column">
+				<div class="f-img">	
+			<?php if ($pimage1){?>
+				<a href="<?php echo esc_url( $plink ); ?>"><img src="<?php echo "$pimage1"; ?>" /></a>
+			<?php }else{
+			echo '';
+			}?>
+						</div>
+			<?php
+				$ptitle = get_field('featured_title_1');
+				$plink = get_field('project_link_1');
+				if ($ptitle){?>
+				<p><a href="<?php echo esc_url( $plink ); ?>"><?php echo $ptitle; ?></a></p>
+				<?php }else{
+					echo '';
+				}?></div>
+				
+				<div class="column">
+					<div class="f-img">
+			<?php if ($pimage2){?>
+					<a href="<?php echo esc_url( $plink ); ?>"><img src="<?php echo "$pimage2"; ?>" /></a>
+			<?php }else{
+			echo '';
+			}?>
+					</div>
+			<?php $ptitle = get_field('project_title_2');
+				$plink = get_field('project_link_2');
+				if ($ptitle){?>
+				<p><a href="<?php echo esc_url( $plink ); ?>"><?php echo $ptitle; ?></a></p>
+				<?php }else{
+					echo '';
+				}?></div>
+				<div class="column">
+					<div class="f-img">
+			<?php if ($pimage3){?>
+					<a href="<?php echo esc_url( $plink ); ?>"><img src="<?php echo "$pimage3"; ?>" /></a>
+			<?php }else{
+			echo '';
+			}?>
+					</div>
+			<?php $ptitle = get_field('project_title_3');
+				$plink = get_field('project_link_3');
+				if ($ptitle){?>
+				<p><a href="<?php echo esc_url( $plink ); ?>"><?php echo $ptitle; ?></a></p>
+				<?php }else{
+					echo '';
+				}?></div>
+				<div class="column">
+					<div class="f-img">
+			<?php if ($pimage4){?>
+					<a href="<?php echo esc_url( $plink ); ?>"><img src="<?php echo "$pimage4"; ?>" /></a>
+			<?php }else{
+			echo '';
+			}?>
+					</div>
+			<?php $ptitle = get_field('project_title_4');
+				$plink = get_field('project_link_4');
+				if ($ptitle){?>
+				<p><a href="<?php echo esc_url( $plink ); ?>"><?php echo $ptitle; ?></a></p>
+				<?php }else{
+					echo '';
+				}?></div>
+				<div class="column">
+					<div class="f-img">
+			<?php if ($pimage5){?>
+					<a href="<?php echo esc_url( $plink ); ?>"><img src="<?php echo "$pimage5"; ?>" /></a>
+			<?php }else{
+			echo '';
+			}?>
+					</div>
+			<?php $ptitle = get_field('project_title_5');
+				$plink = get_field('project_link_5');
+				if ($ptitle){?>
+				<p><a href="<?php echo esc_url( $plink ); ?>"><?php echo $ptitle; ?></a></p>
+				<?php }else{
+					echo '';
+				}?></div>
+				<div class="column">
+					<div class="f-img">
+			<?php if ($pimage6){?>
+					<a href="<?php echo esc_url( $plink ); ?>"><img src="<?php echo "$pimage6"; ?>" /></a>
+			<?php }else{
+			echo '';
+			}?>
+					</div>
+			<?php $ptitle = get_field('project_title_6');
+				$plink = get_field('project_link_6');
+				if ($ptitle){?>
+				<p><a href="<?php echo esc_url( $plink ); ?>"><?php echo $ptitle; ?></a></p>
+				<?php }else{
+					echo '';
+				}?></div>
+				</div>
+		</div>
+	</section>
+<section class="listings">
+	<h2>Exclusive Listings</h2>
+	</section>
+<div class="button-all">
+<p><?php 
+$link = get_field('visit_my_website');
+if( $link ){ ?>
+    <a class="button" href="<?php echo esc_url( $link ); ?>">Visit My Website</a>
+<?php }else{ 
+echo '';	
+}?></p>
+	
+	<p><?php 
+$link = get_field('meet_lourdes');
+if( $link ){ ?>
+    <a class="button" href="<?php echo esc_url( $link ); ?>">Meet Lourdes</a>
+<?php }else{ 
+echo '';	
+}?></p>
+
+	<p><?php 
+$link = get_field('exclusive_listings');
+if( $link ){ ?>
+    <a class="button" href="<?php echo esc_url( $link ); ?>">Exclusive Listings</a>
+<?php }else{ 
+echo '';	
+}?></p>
+	
+	<p><?php 
+$link = get_field('recent_transactions');
+if( $link ){ ?>
+    <a class="button" href="<?php echo esc_url( $link ); ?>">Recent Transactions</a>
+<?php }else{ 
+echo '';	
+}?></p>
+	
+<p><?php 
+$link = get_field('recent_press_mentions');
+if( $link ){ ?>
+    <a class="button" href="<?php echo esc_url( $link ); ?>">Recent Press Mentions</a>
+<?php }else{ 
+echo '';	
+}?></p>
+
+<p><?php 
+$link = get_field('sellers');
+if( $link ){ ?>
+    <a class="button" href="<?php echo esc_url( $link ); ?>">Sellers</a>
+<?php }else{ 
+echo '';	
+}?></p>
+
+<p><?php 
+$link = get_field('buyers');
+if( $link ){ ?>
+    <a class="button" href="<?php echo esc_url( $link ); ?>">Buyers</a>
+<?php }else{ 
+echo '';	
+}?></p>
+
+<p><?php 
+$link = get_field('homes_collection');
+if( $link ){ ?>
+    <a class="button" href="<?php echo esc_url( $link ); ?>">Homes Collection</a>
+<?php }else{ 
+echo '';	
+}?></p>
+
+<p><?php 
+$link = get_field('condos_collection');
+if( $link ){ ?>
+    <a class="button" href="<?php echo esc_url( $link ); ?>">Condos Collection</a>
+<?php }else{ 
+echo '';	
+}?></p>
+
+<p><?php 
+$link = get_field('neighborhood_collection');
+if( $link ){ ?>
+    <a class="button" href="<?php echo esc_url( $link ); ?>">Neighborhood Collection</a>
+<?php }else{ 
+echo '';	
+}?></p>
+
+<p><?php 
+$link = get_field('developments_collection');
+if( $link ){ ?>
+    <a class="button" href="<?php echo esc_url( $link ); ?>">Developments Collection</a>
+<?php }else{ 
+echo '';	
+}?></p>
+
+<p><?php 
+$link = get_field('advanced_search');
+if( $link ){ ?>
+    <a class="button" href="<?php echo esc_url( $link ); ?>">Advanced Search</a>
+<?php }else{ 
+echo '';	
+}?></p>
+
+</div>
+
+</div>
+<section class="footer">
+	<?php 
+	$logoleft = get_field('logo_left');
+	$logoright = get_field('logo_right');
+	$clientaddress = get_field('client_address');
+	$builtlogo = get_field('built_logo');
+	?>
+	<div class="f-logo">
+		<div class="logo left">
+			<img src="<?php echo esc_url( $logoleft ); ?>" />
+		</div>
+		<div class="logo right">
+			<img src="<?php echo esc_url( $logoright ); ?>" />
+		</div>
+	</div>
+	<div class="client-info">
+		<p><?php echo "$clientaddress"; ?></p>
+	</div>
+	<div class="footer-credits">
+		<a href="#"><img src="<?php echo esc_url( $builtlogo ); ?>" /></a>
+	</div>
+	</section>
+	</div>
+</div>
